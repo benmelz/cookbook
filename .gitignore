@@ -2,6 +2,7 @@
 !/app/assets/builds/.keep
 /config/**/*.key
 /config/database.yml
+/coverage/*
 /log/*
 /node_modules/*
 /public/assets/*

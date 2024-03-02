@@ -1,0 +1,24 @@
+gemfile: Gemfile
+
+PreCommit:
+  ALL:
+    problem_on_unmodified_line: ignore
+  EsLint:
+    enabled: true
+    required_executable: yarn
+    command: ["yarn", "run", "--silent", "eslint"]
+  HamlLint:
+    enabled: true
+    on_warn: fail
+    command: ["bundle", "exec", "haml-lint"]
+  RuboCop:
+    enabled: true
+    command: ["bundle", "exec", "rubocop"]
+  Stylelint:
+    enabled: true
+    required_executable: yarn
+    command: ["yarn", "run", "--silent", "stylelint"]
+
+CommitMsg:
+  ALL:
+    enabled: false
