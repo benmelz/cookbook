@@ -60,3 +60,5 @@ group :development do
   # gem "spring"
 end
 
+
+gem "action_policy", "~> 0.6.8"
