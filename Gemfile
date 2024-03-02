@@ -64,3 +64,5 @@ end
 gem "action_policy", "~> 0.6.8"
 
 gem "haml-rails", "~> 2.1"
+
+gem "paper_trail", "~> 15.1"
