@@ -1,0 +1,16 @@
+name: setup
+description: Set up application
+inputs:
+  environment:
+    description: Environment to set up application for
+    required: true
+    default: development
+runs:
+  using: composite
+  steps:
+    - uses: ruby/setup-ruby@v1
+    - uses: actions/setup-node@v3
+      with:
+        node-version-file: .node-version
+    - run: bin/setup
+      shell: bash
