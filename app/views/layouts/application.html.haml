@@ -1,13 +1,27 @@
 !!!
-%html
+%html{ lang: I18n.locale }
   %head
-    %meta{ "http-equiv": "Content-Type", content: "text/html; charset=utf-8" }/
     %title Cookbook
+    %meta{ "http-equiv": "Content-Type", content: "text/html; charset=utf-8" }/
     %meta{ name: "viewport", content: "width=device-width,initial-scale=1" }/
     = csrf_meta_tags
     = csp_meta_tag
-
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", type: "module"
   %body
+    - if flash.present?
+      #flash-container.container.my-3
+        - flash.each do |flash_type, content|
+          :ruby
+            variant = case flash_type.to_s
+            when "notice"
+              "secondary"
+            when "alert"
+              "primary"
+            else
+              raise ArgumentError, "unrecognized flash type"
+            end
+          .alert.alert-dismissible.fade.show{ role: "alert", class: "alert-#{variant}" }
+            = content
+            = button_tag "", type: "button", class: "btn-close", "data-bs-dismiss": "alert", "aria-label": t("dismiss")
     = yield

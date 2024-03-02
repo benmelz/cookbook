@@ -1,24 +1,12 @@
-# README
+# cookbook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple recipe management web application.
 
-Things you may want to cover:
+## Contributing
 
-* Ruby version
+Bug reports and pull requests are welcome on [GitHub](https://github.com/benmelz/cookbook).
 
-* System dependencies
+## License
 
-* Configuration
+The application is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

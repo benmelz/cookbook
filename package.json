@@ -1,25 +1,25 @@
 {
-  "name": "app",
+  "name": "cookbook",
   "private": true,
   "dependencies": {
-    "@csstools/postcss-sass": "^5.1.1",
-    "@fortawesome/fontawesome-free": "^6.5.1",
-    "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.3",
-    "@popperjs/core": "^2.11.8",
-    "autoprefixer": "^10.4.18",
-    "bootstrap": "^5.3.3",
-    "esbuild": "^0.20.1",
-    "postcss": "^8.4.35",
-    "postcss-cli": "^11.0.0",
-    "postcss-scss": "^4.0.9"
+    "@csstools/postcss-sass": "*",
+    "@fortawesome/fontawesome-free": "*",
+    "@hotwired/stimulus": "*",
+    "@hotwired/turbo-rails": "*",
+    "@popperjs/core": "*",
+    "autoprefixer": "*",
+    "bootstrap": "*",
+    "esbuild": "*",
+    "postcss": "*",
+    "postcss-cli": "*",
+    "postcss-scss": "*"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-google": "^0.14.0",
-    "stylelint": "^16.2.1",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-config-standard-scss": "^13.0.0"
+    "eslint": "*",
+    "eslint-config-google": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*",
+    "stylelint-config-standard-scss": "*"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",

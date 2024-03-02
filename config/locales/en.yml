@@ -28,4 +28,5 @@
 #       enabled: "ON"
 
 en:
+  dismiss: "Dismiss"
   hello: "Hello world"
