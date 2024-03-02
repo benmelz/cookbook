@@ -74,3 +74,5 @@ gem "rspec-rails", "~> 6.1"
 gem "selenium-webdriver", "~> 4.18"
 gem "shoulda-matchers", "~> 6.1"
 gem "simplecov", "~> 0.22.0"
+
+gem "friendly_id", "~> 5.5"
