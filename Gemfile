@@ -68,3 +68,9 @@ gem "action_policy", "~> 0.6.8"
 gem "haml-rails", "~> 2.1"
 
 gem "paper_trail", "~> 15.1"
+
+gem "capybara", "~> 3.40"
+gem "rspec-rails", "~> 6.1"
+gem "selenium-webdriver", "~> 4.18"
+gem "shoulda-matchers", "~> 6.1"
+gem "simplecov", "~> 0.22.0"
