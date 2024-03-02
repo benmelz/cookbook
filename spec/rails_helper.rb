@@ -11,11 +11,7 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 
-require "capybara"
-require "paper_trail/frameworks/rspec"
 require "rspec/rails"
-require "selenium-webdriver"
-require "shoulda-matchers"
 
 RSpec.configure do |config|
   config.filter_rails_from_backtrace!

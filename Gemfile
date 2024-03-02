@@ -37,9 +37,9 @@ group :development do
 end
 
 group :test do
-  gem "capybara", require: false
-  gem "rspec-rails", require: false
-  gem "selenium-webdriver", require: false
-  gem "shoulda-matchers", require: false
-  gem "simplecov", require: false
+  gem "capybara"
+  gem "rspec-rails"
+  gem "selenium-webdriver"
+  gem "shoulda-matchers"
+  gem "simplecov"
 end
