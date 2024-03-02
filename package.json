@@ -1,0 +1,30 @@
+{
+  "name": "cookbook",
+  "private": true,
+  "dependencies": {
+    "@csstools/postcss-sass": "*",
+    "@fortawesome/fontawesome-free": "*",
+    "@hotwired/stimulus": "*",
+    "@hotwired/turbo-rails": "*",
+    "@popperjs/core": "*",
+    "autoprefixer": "*",
+    "bootstrap": "*",
+    "esbuild": "*",
+    "postcss": "*",
+    "postcss-cli": "*",
+    "postcss-scss": "*"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-google": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*",
+    "stylelint-config-standard-scss": "*"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "postcss ./app/assets/stylesheets/application.scss -o ./app/assets/builds/application.css",
+    "lint": "eslint .",
+    "lint:css": "stylelint ./**/*.css ./**/*.scss"
+  }
+}

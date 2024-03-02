@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "app/assets/builds/**/*",
+    "app/javascript/controllers/index.js",
+    "coverage/**/*",
+    "public/assets/**/*"
+  ],
+  "rules": {
+    "no-unused-vars": ["error", {"varsIgnorePattern":  "Popper"}],
+    "require-jsdoc": "off"
+  }
+}

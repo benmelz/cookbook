@@ -1,0 +1,6 @@
+linters:
+  ClassesBeforeIds:
+    EnforcedStyle: id
+
+  LineLength:
+    max: 120
